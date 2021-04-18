@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EFDemo")]
+[assembly: AssemblyTitle("EFCodeFirstExistingDB")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EFDemo")]
+[assembly: AssemblyProduct("EFCodeFirstExistingDB")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3de8f38f-baa9-471c-a911-836f98db3456")]
+[assembly: Guid("61f054d2-0b1a-46d7-8282-418a95d18c6f")]
 
 // Version information for an assembly consists of the following four values:
 //
