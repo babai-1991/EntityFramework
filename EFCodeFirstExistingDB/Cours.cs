@@ -23,7 +23,10 @@ namespace EFCodeFirstExistingDB
 
         [Required]
         [StringLength(255)]
-        public string Title { get; set; }
+        public string Name { get; set; }
+        
+
+        
 
         [Required]
         [StringLength(8000)]
@@ -32,6 +35,7 @@ namespace EFCodeFirstExistingDB
         public short FullPrice { get; set; }
 
         public byte Level { get; set; }
+
 
         public virtual Author Author { get; set; }
 

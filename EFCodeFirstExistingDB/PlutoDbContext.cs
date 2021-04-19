@@ -18,7 +18,7 @@ namespace EFCodeFirstExistingDB
         public virtual DbSet<Post> Posts { get; set; }
         public virtual DbSet<Tag> Tags { get; set; }
         public virtual DbSet<tblUser> tblUsers { get; set; }
-
+        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Author>()
@@ -26,7 +26,7 @@ namespace EFCodeFirstExistingDB
                 .IsUnicode(false);
 
             modelBuilder.Entity<Course>()
-                .Property(e => e.Title)
+                .Property(e => e.Name)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Course>()
