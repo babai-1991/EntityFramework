@@ -43,7 +43,12 @@ namespace FluentAPI
             modelBuilder.Entity<Course>()
                 .HasMany(c => c.Tags)
                 .WithMany(t => t.Courses)
-                .Map(configuration => configuration.ToTable("CourseTags"));
+                .Map(configuration =>
+                {
+                    configuration.ToTable("CourseTags");
+                    configuration.MapLeftKey("CourseId");
+                    configuration.MapRightKey("TagId");
+                });
 
             modelBuilder.Entity<Course>()
                 .HasRequired(c => c.Cover)
